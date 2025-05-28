@@ -1,6 +1,7 @@
 class AppImages {
   static String onBoardingOne = "assets/images/onboarding-1.png";
   static String welcomeImage = "assets/images/welcome_image.png";
+  static String appleRingImage = "assets/images/apple_ring_image.png";
 
 
 
