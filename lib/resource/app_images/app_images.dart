@@ -17,6 +17,21 @@ class AppImages {
   static String whatsappIcon = "assets/icons/whatsapp.png";
   static String telegramIcon = "assets/icons/telegram.png";
   static String hourglass = "assets/icons/hourglass.png";
+  static String mainSelfSignal = "assets/icons/main_self_signal.png";
+  static String calenderIcon = "assets/icons/calender_icon.png";
+  static String stackIcon = "assets/icons/stack_icon.png";
+  static String newsIcon = "assets/icons/news_icon.png";
+
+  // nav icons
+  static String signalActiveIcon = "assets/icons/signal_active.png";
+  static String healthActiveIcon = "assets/icons/health_active.png";
+  static String touchActiveIcon = "assets/icons/touch_active.png";
+  static String meActiveIcon = "assets/icons/me_active.png";
+
+  static String signalInActiveIcon = "assets/icons/signal_inactive.png";
+  static String healthInActiveIcon = "assets/icons/health_inactive.png";
+  static String touchInActiveIcon = "assets/icons/touch_inactive.png";
+  static String meInActiveIcon = "assets/icons/me_inactive.png";
 
 
   /// ==================================Lottie animations=============================================

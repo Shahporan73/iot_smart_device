@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:iot_smart_device_app/resource/widget/custom_button.dart';
-import 'package:iot_smart_device_app/resource/widget/custom_text.dart';
 
 import '../../../../resource/app_colors/App_Colors.dart';
 import '../../../../resource/style/custom_size.dart';
 import '../../../../resource/style/custom_style.dart';
-import '../widget/pulsating_circle.dart';
+import '../../../../resource/widget/custom_button.dart';
+import '../../../../resource/widget/custom_text.dart';
+import '../../social_signal/widget/pulsating_circle.dart';
 
-class MainSocialSignalView extends GetView {
-  const MainSocialSignalView({super.key});
+class MainEdgeSignalView extends GetView {
+  const MainEdgeSignalView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +26,7 @@ class MainSocialSignalView extends GetView {
           children: [
             Center(
               child: CustomText(
-                title: 'Social Signal Setup',
+                title: 'Edge Signal Setup',
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: AppColors.mainColor,
@@ -47,10 +47,10 @@ class MainSocialSignalView extends GetView {
               height: Get.height / 8,
             ),
             CustomButton(
-                title: 'Feel Social signal',
-                buttonColor: Color(0xffD9E7F5),
-                titleColor: AppColors.blackColor,
-                onTap: () {},
+              title: 'Feel Edge Signal',
+              buttonColor: Color(0xffD9E7F5),
+              titleColor: AppColors.blackColor,
+              onTap: () {},
             ),
 
             SizedBox(height: Get.height / 22),

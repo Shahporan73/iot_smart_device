@@ -8,10 +8,13 @@ import 'package:iot_smart_device_app/resource/widget/custom_button.dart';
 import 'package:iot_smart_device_app/resource/widget/custom_text.dart';
 
 import '../../../../resource/app_colors/App_Colors.dart';
+import '../../edge_signal/views/main_edge_signal_view.dart';
+import '../../self_signal/views/main_self_signal_view.dart';
 import '../widget/show_color_sheet.dart';
 
 class AssignVibrationView extends GetView {
-  const AssignVibrationView({super.key});
+  final String signalType;
+  const AssignVibrationView({Key? key, required this.signalType}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,10 +76,21 @@ class AssignVibrationView extends GetView {
               SizedBox(
                 height: Get.height / 12,
               ),
+
+
               CustomButton(
                   title: 'Confirm',
                   onTap: () {
-                    Get.to(()=>MainSocialSignalView());
+                    if(signalType == 'social'){
+                      Get.to(()=>MainSocialSignalView());
+                    }
+                    if(signalType == 'self'){
+                      Get.to(()=>MainSelfSignalView());
+                    }
+
+                    if(signalType == 'edge'){
+                      Get.to(()=>MainEdgeSignalView());
+                    }
                   },
               ),
 

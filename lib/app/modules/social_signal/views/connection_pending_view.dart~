@@ -82,7 +82,7 @@ class _ConnectionPendingViewState extends State<ConnectionPendingView>
             ResponsiveSpacing(context).heightBox(0.2),
             CustomButton(title: 'Assign Vibration & Color',
                 onTap: () {
-              Get.to(()=>AssignVibrationView(signalType: 'social',), transition: Transition.downToUp);
+              Get.to(()=>AssignVibrationView(), transition: Transition.downToUp);
                 }
             ),
           ],

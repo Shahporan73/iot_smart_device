@@ -8,6 +8,7 @@ import 'package:iot_smart_device_app/resource/widget/custom_text.dart';
 
 import '../../../../resource/style/custom_size.dart';
 import '../../../../resource/widget/RoundTextField.dart';
+import 'connection_confirm_self_signal_view.dart';
 
 class CreateCustomSignalView extends GetView {
   const CreateCustomSignalView({super.key});
@@ -69,7 +70,12 @@ class CreateCustomSignalView extends GetView {
             SizedBox(
               height: Get.height / 20,
             ),
-            CustomButton(title: 'Submit', onTap: () {}),
+            CustomButton(
+                title: 'Submit',
+                onTap: () {
+                  Get.to(()=>ConnectionConfirmSelfSignalView());
+                }
+            ),
           ],
         ),
       ),
